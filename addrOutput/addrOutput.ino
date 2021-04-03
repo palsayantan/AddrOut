@@ -14,10 +14,10 @@ void setup() {
 }
 
 void loop() {
-  for(int i = 1; i < 17; i++){
+  for(int i = 1; i < NUM_LEDS * 3; i++){
   out.on(i);
-  delay(100);
-  out.off(17-i);
-  delay(100);
+  delay(1000);
+  out.off(i);
+  delay(1000);
   }
 }
